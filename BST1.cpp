@@ -89,7 +89,7 @@ Node* deleteNode(Node* root, int key) {
 int findMax(Node* root) {
     if(root == NULL) {
         cout << "Tree is empty." << endl;
-        return INT_MIN; // Return minimum integer value to indicate error
+        return INT_MIN; 
     }
     while(root->right != NULL) {
         root = root->right;
@@ -100,7 +100,7 @@ int findMax(Node* root) {
 int findMin(Node* root) {
     if(root == NULL) {
         cout << "Tree is empty." << endl;
-        return INT_MAX; // Return maximum integer value to indicate error
+        return INT_MAX; 
     }
     while(root->left != NULL) {
         root = root->left;
